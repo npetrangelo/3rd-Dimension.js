@@ -1,5 +1,9 @@
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
-ctx.moveTo(0, 0);
-ctx.lineTo(200, 100);
-ctx.stroke();
+
+function myFunction() {
+	ctx.beginPath();
+	ctx.rect(0, 0, c.width, c.height);
+	ctx.fillStyle = "black";
+	ctx.fill();
+}
