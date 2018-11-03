@@ -15,7 +15,7 @@ class Camera {
 	}
 
 	setRotation(phi) {
-		this.phi = phi
+		this.phi = phi;
 	}
 
 	translate(dx, dy, dx) {

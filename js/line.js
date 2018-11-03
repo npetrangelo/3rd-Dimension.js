@@ -9,7 +9,5 @@ class Line {
 		ctx.lineTo(this.pt2.x, this.pt2.y)
 		ctx.strokeStyle = '#00ffff'
 		ctx.stroke()
-		this.pt1.draw(ctx)
-		this.pt2.draw(ctx)
 	}
 }
