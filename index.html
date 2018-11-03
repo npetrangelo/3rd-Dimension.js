@@ -13,20 +13,35 @@
 </head>
 
 <body>
-	<div align=center style="border:1px solid black;">
-		<canvas id="myCanvas" width="400" height="400"></canvas>
+	<div align=center>
+		<canvas id="myCanvas" width="600" height="400" style="border:1px solid black;">
+		</canvas>
 	</div>
 	<div align=center width=100%>
-		<div class=left>
+		<fieldset class=left>
+			<legend>Cube Controls</legend>
 			<button onclick="myFunction()">Face</button>
 			<button onclick="myFunction()">Edge</button>
 			<button onclick="myFunction()">Vertex</button>
-			<input type="range" min="0" max="100" value="50" id="distance">
+			<div class="range" align=center>
+				<input type="range" min="0" max="100" value="50" id="distance">
+				<div class="sliderticks">
+	    			<p>Near</p>
+	    			<p>Mid</p>
+	    			<p>Far</p>
+	  			</div>
+	  		</div>
 		</div>
-		<div class=right>
+		<fieldset align=center class=right>
+			<legend>Camera Controls</legend>
 			<button onclick="myFunction()">Top</button>
 			<button onclick="myFunction()">Front</button>
-			<input type="range" min="0" max="100" value="100" id="perspective">
+			<div class="range" align=center>
+				<input type="range" min="0" max="100" value="100" id="perspective">
+				<div class="sliderticks">
+	    			<p>Ortho</p>
+	    			<p>Pers</p>
+	  			</div>
 		</div>
 	</div>
 	<script src="js/main.js"></script>
