@@ -7,5 +7,5 @@ function myFunction() {
 	ctx.fillStyle = "black";
 	ctx.fill();
 	let line = new Line(new Point(100, 100), new Point(200, 200));
-	line.draw(ctx;)
+	line.draw(ctx);
 }
